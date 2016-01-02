@@ -1,0 +1,69 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<div class="jumbotron"><div class="container">
+<h1>{{title}}</h1>
+</div></div>
+
+<div class="container" role="document">
+
+<div class="row">
+<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+
+<main class="content" role="main">
+
+    <article class="{{post_class}} post-wrap">
+
+        <header class="post-header">
+            <section class="post-meta" style="margin-bottom:15px;">
+                {{author}} on <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" in "}}
+            </section>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+        <footer class="post-footer">
+
+        {{! Everything inside the #author tags pulls data from the author }}
+        {{#author}}
+
+            <section class="author" style="margin-top:15px;">
+                <h4>{{name}}</h4>
+
+                {{#if bio}}
+                    <p>{{bio}}</p>
+                {{else}}
+                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                {{/if}}
+
+                <div class="author-meta">
+                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                </div>
+
+            </section>
+
+        {{/author}}
+
+{{> disqus }}
+
+        </footer>
+
+    </article>
+
+</main>
+
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 sidebar">
+{{> "sidebar"}}
+</div>
+</div>
+
+{{/post}}

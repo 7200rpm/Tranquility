@@ -1,0 +1,1 @@
+# Bootstrap Skeleton for Ghost

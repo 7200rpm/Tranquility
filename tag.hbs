@@ -1,0 +1,30 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+  <div class="jumbotron"><div class="container">
+  <h1>{{tag.name}}</h1>
+  {{#if tag.description}}
+    {{tag.description}}
+      {{else}}
+        A {{pagination.total}}-post collection
+  {{/if}}
+  </div></div>
+
+  <div class="container" role="document">
+
+<div class="row">
+  <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</main>
+
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+{{> "sidebar"}}
+</div>
+</div>

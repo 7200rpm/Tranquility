@@ -1,0 +1,42 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<div class="jumbotron"><div class="container">
+<h1>{{title}}</h1>
+</div></div>
+
+<div class="container" role="document">
+
+<div class="row">
+<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+
+<main class="content" role="main">
+
+        <h3>Experience</h3>
+
+	<div class="row">
+		<div class="col-xs-8">
+			Lead Engineer
+			<p>Company ABC</p>
+		</div>
+		<div class="col-xs-4">
+			2014 - Current
+		</div>
+	</div>
+
+</main>
+
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 sidebar">
+{{> "sidebar"}}
+</div>
+</div>
+
+{{/post}}
+
+

@@ -1,0 +1,113 @@
+.post-wrap {
+	background-color: white;
+	position: relative;
+	margin-bottom: 30px;
+	box-shadow: 1px 1px 4px #d0d0d0;
+	overflow: hidden;
+	padding: 32px;
+}
+
+.post-wrap .featured-image {
+	position: absolute;
+	width: 260px;
+	height: 100%;
+	margin-right: 32px;
+	background-size: cover;
+	background-position: center;
+}
+
+.post-wrap .post-content {
+	/* padding: 32px 32px 32px 292px; */
+}
+
+/*====================================================
+	sidebar
+====================================================*/
+.sidebar .widget {
+  -webkit-box-shadow: 1px 1px 4px #d0d0d0;
+  -moz-box-shadow: 1px 1px 4px #d0d0d0;
+  box-shadow: 1px 1px 4px #d0d0d0;
+  background: #ffffff;
+  padding: 0 32px 32px 32px;
+}
+.sidebar .widget .title {
+  text-align: center;
+}
+.widget {
+  margin-bottom: 30px;
+}
+.widget .title {
+  color: #262626;
+  margin-bottom: 24px;
+  margin-top: 0;
+  padding: 21px 0;
+  line-height: 1em;
+  border-bottom: 1px solid #f0f0f0;
+}
+.widget .tag-cloud a {
+  color: #828282;
+  border: 1px solid #f0f0f0;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0 7px 7px 0;
+  padding: 0 4px;
+}
+.widget .tag-cloud a:hover {
+  color: #8bc34a;
+  border: 1px solid #8bc34a;
+}
+.widget .recent-post .recent-single-post {
+  margin-bottom: 16px;
+}
+.widget .recent-post .recent-single-post a {
+  font-family: 'Droid Serif', serif;
+  color: #262626;
+}
+.widget .recent-post .recent-single-post a:hover {
+  color: #8bc34a;
+}
+.widget .recent-post .recent-single-post .date {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.widget .newsletter .input-group {
+  display: block;
+  margin-bottom: 14px;
+}
+.widget .newsletter .input-group input[type="email"] {
+  width: 100%;
+}
+.widget .fb {
+  text-align: center;
+}
+.widget .twitter {
+  text-align: center;
+}
+.widget .flickr-images {
+  padding: 0;
+  margin: 0;
+}
+.widget .flickr-images li {
+  list-style: none;
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
+/*====================================================
+	Footer
+====================================================*/
+
+.footer {
+	background: white;
+	box-shadow: 1px 1px 4px #d0d0d0;
+	margin-top: 40px;
+}
+
+.footer .footer-top {
+	padding: 24px 0;
+}
+
+.footer .footer-bottom {
+	padding: 30px 0;
+	/* border-top: 1px solid #f0f0f0; */
+}
