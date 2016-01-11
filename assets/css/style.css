@@ -4,7 +4,7 @@
 	margin-bottom: 30px;
 	box-shadow: 1px 1px 4px #d0d0d0;
 	overflow: hidden;
-	padding: 32px;
+	/*padding*/: 32px;
 }
 
 .post-wrap .featured-image {
@@ -16,8 +16,49 @@
 	background-position: center;
 }
 
-.post-wrap .post-content {
-	/* padding: 32px 32px 32px 292px; */
+.post-wrap .post-content{
+    padding: 32px;
+}
+
+.post-wrap .post-header {
+   margin-bottom: 3.4rem;
+}
+
+div.authorimage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  margin-right: 10px;
+  float: left;
+}
+
+/*====================================================
+	Colors
+====================================================*/
+
+.calm{
+    background-color: #428bca;
+    color: white;
+    box-shadow: 2px 2px 4px #d0d0d0;
+}
+
+.assertive{
+    background-color: darkred;
+    color: white;
+    box-shadow: 2px 2px 4px #d0d0d0;
+}
+
+.mild{
+    background-color: lightblue;
+    color: black;
+    box-shadow: 2px 2px 4px #d0d0d0;
+}
+
+.padding{
+    padding: 32px;
 }
 
 /*====================================================
@@ -111,3 +152,15 @@
 	padding: 30px 0;
 	/* border-top: 1px solid #f0f0f0; */
 }
+
+
+/*====================================================
+	Header
+====================================================*/
+
+.shadow {
+    color: white !important;
+        text-shadow:
+       2px 4px 3px rgba(0,0,0,0.3);
+}
+

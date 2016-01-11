@@ -6,9 +6,9 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<div class="jumbotron"><div class="container">
+<!--<div class="jumbotron"><div class="container">
 <h1>{{title}}</h1>
-</div></div>
+</div></div>-->
 
 <div class="container" role="document">
 
@@ -18,43 +18,55 @@
 <main class="content" role="main">
 
     <article class="{{post_class}} post-wrap">
+        
+        <img class="img-responsive" src="{{image}}">
+    
 
-        <header class="post-header">
-            <section class="post-meta" style="margin-bottom:15px;">
-                {{author}} on <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" in "}}
+            <section class="post-content">
+                
+                <header class="post-header">
+                <h1 class="post-title">{{title}}</h1>
+                <section class="post-meta" style="margin-bottom:15px;">
+                    {{author}} on <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" in "}}
+                </section>
+            </header>
+                
+                {{content}}
+                
+                <footer class="post-footer">
+
+            {{! Everything inside the #author tags pulls data from the author }}
+            {{#author}}
+
+                <section class="author" style="margin-top:15px;">
+                    
+                    <div class="authorimage" style="background: url({{author.image}})"></div>
+                    
+                    <h4>{{name}}</h4>
+
+                    {{#if bio}}
+                        <p>{{bio}}</p>
+                    {{else}}
+                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                    {{/if}}
+
+                    <div class="author-meta">
+                        {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+                        {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                    </div>
+
+                </section>
+
+            {{/author}}
+
+            {{> disqus }}
+
+            </footer>
             </section>
-        </header>
 
-        <section class="post-content">
-            {{content}}
-        </section>
+            
+            
 
-        <footer class="post-footer">
-
-        {{! Everything inside the #author tags pulls data from the author }}
-        {{#author}}
-
-            <section class="author" style="margin-top:15px;">
-                <h4>{{name}}</h4>
-
-                {{#if bio}}
-                    <p>{{bio}}</p>
-                {{else}}
-                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                {{/if}}
-
-                <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                </div>
-
-            </section>
-
-        {{/author}}
-
-{{> disqus }}
-
-        </footer>
 
     </article>
 

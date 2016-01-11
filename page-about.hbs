@@ -6,9 +6,20 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<div class="jumbotron"><div class="container">
-<h1>{{title}}</h1>
-</div></div>
+<!--<div class="jumbotron"><div class="container">
+    
+    <div class="row">
+    
+        <div class="col-md-3">
+            <img class="img-responsive" src="\images\Europe.jpg">
+        </div>
+        <div class="col-md-9">
+            <h1>Brandon Brown</h1>
+        </div>
+    
+    </div>
+
+</div></div>-->
 
 <div class="container" role="document">
 
@@ -16,18 +27,82 @@
 <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
 
 <main class="content" role="main">
+    
+    <article class="{{post_class}} post-wrap">
+        
+        <img class="img-responsive" src="\images\Europe.jpg">
+        
+<section class="post-content">
 
-        <h3>Experience</h3>
+        <header class="post-header">
+            
+            <h1 class="post-title">About</h1>
+            
+            <section class="row" style="margin-bottom:15px;">
 
-	<div class="row">
-		<div class="col-xs-8">
-			Lead Engineer
-			<p>Company ABC</p>
-		</div>
-		<div class="col-xs-4">
-			2014 - Current
-		</div>
-	</div>
+            </section>
+            
+        </header>
+
+
+            {{content}}
+
+
+        <footer class="post-footer">
+    
+            
+    
+    </section>
+        
+    </article>
+        
+        
+        <article class="post-wrap" style="display: flex; flex-flow: row wrap; height: 200px;">
+            
+            <img class="img-responsive" style="height: 100%;" src="\images\tranquility.jpg">
+        
+                    
+        <section class="post-content" >
+
+            
+
+            <header class="post-header" style="flex: 1;">
+            <h1 class="post-title">Interests
+                <p><small>Coffee</small></p></h1>
+            </header>
+
+
+        </section>
+
+                
+
+    </article>
+        
+        
+        
+        <article class="post-wrap" style="display: flex; flex-flow: row wrap; justify-content: flex-end; height: 200px;">
+            
+            
+        
+                    
+        <section class="post-content" style="flex: 1;">
+
+            
+
+            <header class="post-header" >
+            <h1 class="post-title text-right">Hobbies
+                <p><small>Disc Golf, Photography, Outdoorsy</small></p></h1>
+
+            </header>
+
+
+        </section>
+
+                <img class="img-responsive" style="max-height: 200px;" src="\images\discgolf.jpg">
+
+    </article>
+        
+
 
 </main>
 
