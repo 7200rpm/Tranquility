@@ -1,0 +1,83 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<!--<div class="jumbotron"><div class="container">
+    
+    <div class="row">
+    
+    <div class="col-md-3">
+        <img class="img-responsive" src="\images\Europe.jpg">
+    </div>
+    <div class="col-md-9">
+        <h1>Engineer</h1>
+    </div>
+    
+    </div>
+
+</div></div>-->
+
+<div class="container" role="document">
+
+<div class="row">
+<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+
+<main class="content" role="main">
+    
+    <article class="post-wrap">
+        
+                    
+        <section class="post-content" style="display: flex; flex-flow: row wrap; align-items: center;">
+
+            <img class="img-responsive" style="max-height: 150px; margin-right: 32px;" src="\images\colaabo.png">
+
+            <header class="post-header" style="flex: 1; margin: 0;">
+            <h1 class="post-title" style="margin: 0;"><a href="http://www.colaabo.com/">Colaabo</a>
+                <p><small>Ionic Mobile App</small></p></h1>
+                <p></p>
+            </header>
+
+
+        </section>
+
+                
+
+    </article>
+    
+    <article class="post-wrap">
+        
+                    
+        <section class="post-content" style="display: flex; flex-flow: row wrap; align-items: center;">
+
+            <img class="img-responsive" style="max-height: 150px; margin-right: 32px;" src="\images\tranquility.png">
+
+            <header class="post-header" style="flex: 1; margin: 0;">
+            <h1 class="post-title" style="margin: 0;"><a href="https://github.com/7200rpm/Tranquility">Tranquility</a>
+                <p><small>Ghost Blog Theme</small></p></h1>
+                <p>Clean, simple Ghost Blog Theme that is used on this site. Based on bootstrap, includes google analytics, social buttons, disqus comments, etc. Feel free to use!</p>
+            </header>
+
+
+        </section>
+
+                
+
+    </article>
+    
+    
+
+</main>
+
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 sidebar">
+{{> "sidebar"}}
+</div>
+</div>
+
+{{/post}}
+
+
