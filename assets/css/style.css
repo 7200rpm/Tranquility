@@ -24,6 +24,13 @@
    margin-bottom: 3.4rem;
 }
 
+.post-content img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
 div.authorimage {
   width: 70px;
   height: 70px;
