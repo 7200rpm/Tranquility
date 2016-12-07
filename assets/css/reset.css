@@ -1,8 +1,8 @@
 .jumbotron {
-		margin-top: -30px;
 		margin-bottom: 30px;
 		border-bottom: 0;
 		border-radius: 0;
+        height: 700px;
 }
 .pagination {
     position: relative;

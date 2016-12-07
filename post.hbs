@@ -10,6 +10,11 @@
 <h1>{{title}}</h1>
 </div></div>-->
 
+<div class="jumbotron " style="background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), {{#if image}}url({{image}}){{else}}url({{@blog.cover}}){{/if}}; background-position: center; background-size: cover"><div class="jumbo-wrapper">
+<h1 class="shadow">{{title}}</h1>
+{{!-- <strong>{{@blog.description}}</strong> --}}
+</div></div>
+
 <div class="container" role="document">
 
 <div class="row">
@@ -17,15 +22,13 @@
 
 <main class="content" role="main">
 
-    <article class="{{post_class}} post-wrap">
-        
-        <img class="img-responsive" src="{{image}}">
-    
+    <article class="{{post_class}} post-wrap" style="margin-top: -70px">
+         
 
             <section class="post-content">
                 
                 <header class="post-header">
-                <h1 class="post-title">{{title}}</h1>
+                {{!-- <h1 class="post-title">{{title}}</h1> --}}
                 <section class="post-meta" style="margin-bottom:15px;">
                     {{author}} on <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" in "}}
                 </section>

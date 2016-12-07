@@ -169,5 +169,45 @@ div.authorimage {
     color: white !important;
         text-shadow:
        2px 4px 3px rgba(0,0,0,0.3);
+     padding-left: 0.5em;
+}
+
+.fixed {
+  position: fixed !important;
+  top: 0px;
+  width: 100%;
+  background-color: rgba(35,82,124,0);transition: background-color 1s ease 0s;
+  z-index: 10;
+}
+
+.fixed.opaque{
+  background-color: rgba(35,82,124,1);transition: background-color 1s ease 0s;
+}
+
+.fixed a{
+  color: white;
+}
+
+.jumbo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+/* Hack to get menu to show white */
+
+.back-white{
+background-color: white;
+}
+
+.border-white{
+  border-color: white !important;
 }
 
